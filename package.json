@@ -2,7 +2,7 @@
   "name": "marketplace-app",
   "private": true,
   "scripts": {
-    "build": "prisma generate && NODE_ENV=production remix build",
+    "build": "prisma generate && prisma migrate deploy && NODE_ENV=dev remix build",
     "predev": "prisma generate && prisma migrate deploy",
     "dev": "shopify app dev",
     "deploy": "shopify app deploy",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@preact/signals": "^1.1.5",
-    "@prisma/client": "^5.4.2",
+    "@prisma/client": "^5.10.2",
     "@remix-run/node": "^2.0.0",
     "@remix-run/react": "^2.0.0",
     "@remix-run/serve": "^2.0.0",
@@ -53,6 +53,7 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "prettier": "^3.1.1",
+    "prisma": "5.10.2",
     "typescript": "^5.2.2"
   },
   "workspaces": {
@@ -62,3 +63,4 @@
   },
   "author": "alexandroskoukis"
 }
+
