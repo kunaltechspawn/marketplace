@@ -73,8 +73,8 @@ importers:
         version: 0.0.1
     devDependencies:
       '@remix-run/dev':
-        specifier: ^2.0.0
-        version: 2.0.0(@remix-run/serve@2.0.0)(@types/node@20.8.0)(typescript@5.2.2)
+        specifier: ^1.6.8
+        version: 1.6.8(@remix-run/serve@2.0.0)(@types/node@20.8.0)(typescript@5.2.2)
       '@remix-run/eslint-config':
         specifier: ^2.0.0
         version: 2.0.0(eslint@8.49.0)(react@18.2.0)(typescript@5.2.2)
