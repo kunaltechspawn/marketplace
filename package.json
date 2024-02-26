@@ -2,7 +2,7 @@
   "name": "marketplace-app",
   "private": true,
   "scripts": {
-    "build": "prisma generate && prisma migrate deploy && NODE_ENV=dev remix build",
+    "build": "NODE_ENV=dev remix build",
     "predev": "prisma generate && prisma migrate deploy",
     "dev": "shopify app dev",
     "deploy": "shopify app deploy",
