@@ -56,8 +56,7 @@
     "prisma": "5.10.2",
     "typescript": "^5.2.2"
   },
-  {
-  "presets": [
+  "presets": {[
     "@babel/preset-env",
     "@babel/preset-react"
   ]
