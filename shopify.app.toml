@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 name = "Multivendor Shop"
-client_id = "36721b0a5b6c24a485ba96e52adc57b7"
+client_id = "8c02900ccbba0ef35607f29663145bb3"
 application_url = "https://marketplace-wgmaq5ezd-kunal-hedaoos-projects.vercel.app"
 embedded = true
 
