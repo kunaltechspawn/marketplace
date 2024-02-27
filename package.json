@@ -4,7 +4,7 @@
   "scripts": {
     "build": "NODE_ENV=production remix build",
     "predev": "prisma generate && prisma migrate deploy",
-    "postinstall": "prisma generate && prisma migrate deploy",
+    "postinstall" :  "prisma generate"
     "dev": "shopify app dev",
     "deploy": "shopify app deploy",
     "config:link": "shopify app config link",
