@@ -39,6 +39,7 @@ const shopify = shopifyApp({
   hooks: {
     afterAuth: async ({ session, admin }) => {
       shopify.registerWebhooks({ session });
+      alert("Webhooks registered");
       // Create webhook subscription for metaobjects since it doesnt exist on api
       const { accessToken, shop } = session;
       try {
