@@ -2,7 +2,7 @@
 
 name = "Multivendor Shop"
 client_id = "8c02900ccbba0ef35607f29663145bb3"
-application_url = "https://roommate-check-nights-developments.trycloudflare.com"
+application_url = "https://marketplace-swart.vercel.app"
 embedded = true
 
 [access_scopes]
@@ -11,10 +11,10 @@ scopes = "read_product_listings,unauthenticated_read_product_listings,write_prod
 
 [auth]
 redirect_urls = [
-  "https://roommate-check-nights-developments.trycloudflare.com/auth/callback",
-  "https://roommate-check-nights-developments.trycloudflare.com/auth/shopify/callback",
-  "https://roommate-check-nights-developments.trycloudflare.com/api/auth/callback",
-  "https://roommate-check-nights-developments.trycloudflare.com/.shopify/graphiql/auth/callback"
+  "https://marketplace-swart.vercel.app/auth/callback",
+  "https://marketplace-swart.vercel.app/auth/shopify/callback",
+  "https://marketplace-swart.vercel.app/api/auth/callback",
+  "https://marketplace-swart.vercel.app/.shopify/graphiql/auth/callback"
 ]
 
 [webhooks]
