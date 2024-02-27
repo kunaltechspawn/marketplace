@@ -37,45 +37,45 @@ const shopify = shopifyApp({
     level: LogSeverity.Debug,
   },*/
   hooks: {
-    afterAuth: async ({ session, admin }) => {
-      shopify.registerWebhooks({ session });
+    // afterAuth: async ({ session, admin }) => {
+    //   shopify.registerWebhooks({ session });
 
-      // Create webhook subscription for metaobjects since it doesnt exist on api
-      const { accessToken, shop } = session;
-      try {
-        const response = await fetch(
-          `https://${shop}/admin/api/${apiVersion}/graphql.json`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "X-Shopify-Access-Token": accessToken,
-            },
-            body: JSON.stringify({
-              query: `mutation {
-                webhookSubscriptionCreate1: webhookSubscriptionCreate(
-                  topic: METAOBJECTS_UPDATE
-                  subTopic: "type:vendors"
-                  webhookSubscription: {callbackUrl: "${process.env.SHOPIFY_APP_URL}/webhooks", format: JSON}
-                ) {
-                  userErrors {
-                    field
-                    message
-                  }
-                  webhookSubscription {
-                    id
-                  }
-                }
-              }`,
-            }),
-          },
-        );
-        const responseJson = await response.json();
-        console.log(JSON.stringify(responseJson));
-      } catch (error) {
-        console.log(JSON.stringify(error));
-      }
-    },
+    //   // Create webhook subscription for metaobjects since it doesnt exist on api
+    //   const { accessToken, shop } = session;
+    //   try {
+    //     const response = await fetch(
+    //       `https://${shop}/admin/api/${apiVersion}/graphql.json`,
+    //       {
+    //         method: "POST",
+    //         headers: {
+    //           "Content-Type": "application/json",
+    //           "X-Shopify-Access-Token": accessToken,
+    //         },
+    //         body: JSON.stringify({
+    //           query: `mutation {
+    //             webhookSubscriptionCreate1: webhookSubscriptionCreate(
+    //               topic: METAOBJECTS_UPDATE
+    //               subTopic: "type:vendors"
+    //               webhookSubscription: {callbackUrl: "${process.env.SHOPIFY_APP_URL}/webhooks", format: JSON}
+    //             ) {
+    //               userErrors {
+    //                 field
+    //                 message
+    //               }
+    //               webhookSubscription {
+    //                 id
+    //               }
+    //             }
+    //           }`,
+    //         }),
+    //       },
+    //     );
+    //     const responseJson = await response.json();
+    //     console.log(JSON.stringify(responseJson));
+    //   } catch (error) {
+    //     console.log(JSON.stringify(error));
+    //   }
+    // },
   },
   future: {
     v3_webhookAdminContext: true,
