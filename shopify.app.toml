@@ -18,10 +18,10 @@ redirect_urls = [
 [webhooks]
 api_version = "2023-10"
 
-  [webhooks.privacy_compliance]
-  customer_deletion_url = "https://marketplace-swart.vercel.app/gdpr/data/erasure"
-  customer_data_request_url = "https://marketplace-swart.vercel.app/gdpr/data/request"
-  shop_deletion_url = "https://marketplace-swart.vercel.app/gdpr/shop/erasure"
+[webhooks.privacy_compliance]
+customer_deletion_url = "https://marketplace-swart.vercel.app/gdpr/data/erasure"
+customer_data_request_url = "https://marketplace-swart.vercel.app/gdpr/data/request"
+shop_deletion_url = "https://marketplace-swart.vercel.app/gdpr/shop/erasure"
 
 [app_proxy]
 url = "https://marketplace-swart.vercel.app/frontend"
