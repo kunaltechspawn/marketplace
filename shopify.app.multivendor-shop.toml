@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Multivendor Shop"
+client_id = "8c02900ccbba0ef35607f29663145bb3"
+application_url = "https://roommate-check-nights-developments.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_product_listings,unauthenticated_read_product_listings,write_products,read_products,read_metaobjects,write_metaobjects,read_metaobject_definitions,write_metaobject_definitions,write_customers,read_orders,write_orders,write_files,write_themes,read_publications,write_publications,write_assigned_fulfillment_orders,read_merchant_managed_fulfillment_orders,write_merchant_managed_fulfillment_orders"
+
+[auth]
+redirect_urls = [
+  "https://roommate-check-nights-developments.trycloudflare.com/auth/callback",
+  "https://roommate-check-nights-developments.trycloudflare.com/auth/shopify/callback",
+  "https://roommate-check-nights-developments.trycloudflare.com/api/auth/callback",
+  "https://roommate-check-nights-developments.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-4f59f59c.myshopify.com"
