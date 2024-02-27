@@ -36,4 +36,4 @@ embedded = false
 
 [build]
 automatically_update_urls_on_dev = true
-dev_store_url = "newathens.myshopify.com"
+dev_store_url = "quickstart-4f59f59c.myshopify.com"
