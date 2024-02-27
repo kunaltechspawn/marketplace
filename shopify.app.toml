@@ -10,13 +10,10 @@ embedded = true
 scopes = "read_product_listings,unauthenticated_read_product_listings,write_products,read_products,read_metaobjects,write_metaobjects,read_metaobject_definitions,write_metaobject_definitions,write_customers,read_orders,write_orders,write_files,write_themes,read_publications,write_publications,write_assigned_fulfillment_orders,read_merchant_managed_fulfillment_orders,write_merchant_managed_fulfillment_orders"
 use_legacy_install_flow = true
 
-# [auth]
-# redirect_urls = [
-#   "https://marketplace-swart.vercel.app/auth/callback",
-#   "https://marketplace-swart.vercel.app/auth/shopify/callback",
-#   "https://marketplace-swart.vercel.app/api/auth/callback",
-#   "https://marketplace-swart.vercel.app/.shopify/graphiql/auth/callback"
-# ]
+[auth]
+redirect_urls = [
+  "https://marketplace-swart.vercel.app/auth/callback"
+]
 
 [webhooks]
 api_version = "2023-10"
