@@ -10,9 +10,9 @@ export const links = () => [{ rel: "stylesheet", href: indexStyles }];
 export async function loader({ request }) {
   const url = new URL(request.url);
 
-  if (url.searchParams.get("shop")) {
-    throw redirect(`/app?${url.searchParams.toString()}`);
-  }
+  // if (url.searchParams.get("shop")) {
+  //   throw redirect(`/app?${url.searchParams.toString()}`);
+  // }
 
   return json({ showForm: Boolean(login) });
 }
