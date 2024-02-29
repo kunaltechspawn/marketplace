@@ -1,0 +1,12 @@
+{
+  "frontend/entrypoints/customerPage.css": {
+    "file": "customerPage-7588ee2f.css",
+    "isEntry": true,
+    "src": "frontend/entrypoints/customerPage.css"
+  },
+  "frontend/entrypoints/customerPage.jsx": {
+    "file": "customerPage-1d600de5.js",
+    "isEntry": true,
+    "src": "frontend/entrypoints/customerPage.jsx"
+  }
+}
